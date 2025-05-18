@@ -17,13 +17,13 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class TCA {
     final static Scanner LER = new Scanner(System.in);
     final static Random R = new Random();
-    final static String CAMINHO_MAIOR_PONTUACAO = "C:\\Users\\Murilovski\\Documents\\RepositorioGitHub\\Projetos\\2048\\MaiorPontuacao.txt";
+    final static String CAMINHO_MAIOR_PONTUACAO = "C:\\Users\\Murilovski\\Documents\\RepositorioGitHub\\Projetos\\TCA\\MaiorPontuacao.txt";
     final static String CAMINHO_SOM_DERROTA = "C:\\Users\\Murilovski\\Documents\\RepositorioGitHub\\Projetos\\2048\\sounds\\Lose-sound-effects.wav";
-    final static String CAMINHO_SOM_VITORIA = "C:\\Users\\Murilovski\\Documents\\RepositorioGitHub\\Projetos\\2048\\sounds\\You-Win-_-Street-Fighter-_-Sound-Effect.wav";
+    final static String CAMINHO_SOM_VITORIA = "C:\\Users\\Murilovski\\Documents\\RepositorioGitHub\\Projetos\\TCA\\sounds\\You-Win-_-Street-Fighter-_-Sound-Effect.wav";
 
     public static void main(String[] args) throws InterruptedException {
         imprimirCabecalho();
-        Thread.sleep(10000);
+        Thread.sleep(1000);
         limparTela();
         final int[] TAMANHO_DO_CAMPO = { 5, 4 };
         int[][] campo = criarMatriz(TAMANHO_DO_CAMPO[0], TAMANHO_DO_CAMPO[1]);// [4][0] = pontos, [4][1] =
